@@ -12,8 +12,8 @@ $(function() {
 
     $("#loadData").click(function() {
 
-        if(startEntry.value > endEntry.value){
-            alert('Start value must be less than end value');
+        if(Number(startEntry.value) > Number(endEntry.value)){
+            alert('Start value must be less than end value ' + startEntry.value + ' > ' + endEntry.value);
         }else {
             loadData(startEntry.value, endEntry.value, resultType.value);
         }
