@@ -48,8 +48,11 @@ $(function() {
     function populateDataTable(data) {
         console.log("populating data table...");
         // clear the table before populating it with more data
-        $("#cyber").DataTable().clear();
 
+        $("#cyber").DataTable().clear();
+        if(0 == data.length) {
+            $("#cyber").DataTable().draw();
+        }
         for(let i of Object.keys(data)){
             var result = data[i];
 
