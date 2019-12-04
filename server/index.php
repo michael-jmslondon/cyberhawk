@@ -25,9 +25,9 @@
             $row_info .= "Coating Damaged";
         }
         if($i % 5 === 0 && $i %3 === 0){
-            $row_info .= " and Lighting Strike";
+            $row_info .= " and Lightning Strike";
         }elseif( $i % 5 === 0  ){
-            $row_info .= "Lighting Strike";
+            $row_info .= "Lightning Strike";
         }
         $row_info .= "</td></tr>";
         echo $row_info;
